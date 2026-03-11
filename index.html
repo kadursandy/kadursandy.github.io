@@ -28,27 +28,48 @@ a{
 /* COVER */
 
 .cover{
-    background:url("cover.jpg") center/cover no-repeat;
-    height:300px;
-    position:relative;
+    background:radial-gradient(circle at top left, #1f6feb 0, #0f1117 45%, #0f1117 100%);
+    min-height:260px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    padding-bottom:40px;
+    text-align:center;
 }
 
-.profile-pic{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:4px solid #0f1117;
-    position:absolute;
-    bottom:-75px;
-    left:50%;
-    transform:translateX(-50%);
+.cover-title{
+    font-size:32px;
+    font-weight:600;
+    letter-spacing:0.03em;
+}
+
+.cover-tagline{
+    margin-top:10px;
+    color:#9da7b3;
+    font-size:18px;
+}
+
+.pill-row{
+    margin-top:18px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.pill{
+    background:#161b22;
+    border-radius:999px;
+    padding:6px 14px;
+    font-size:13px;
+    color:#9da7b3;
 }
 
 /* HEADER */
 
 .header{
     text-align:center;
-    padding-top:100px;
+    padding-top:40px;
 }
 
 .header h1{
@@ -121,8 +142,15 @@ footer{
 <body>
 
 <div class="cover">
-    <!-- Replace with your profile image -->
-    <img src="profile.jpg" class="profile-pic">
+    <div>
+        <div class="cover-title">Sandeep R</div>
+        <div class="cover-tagline">Principal Engineer • Cloud-Native & Observability Leader</div>
+        <div class="pill-row">
+            <div class="pill">Building Observability Platforms at Scale</div>
+            <div class="pill">Cloud-Native Architecture</div>
+            <div class="pill">AI & GenAI for Operations</div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
@@ -130,7 +158,7 @@ footer{
 <div class="header">
 <h1>Sandeep Rajanikanth Gupta</h1>
 <div class="subtitle">Principal Engineer @ Oracle</div>
-<div class="subtitle">Cloud-Native Architect • DevOps • AI • GenAI</div>
+<div class="subtitle">Observability Platforms • Site Reliability • AI-Driven Insights</div>
 <div class="location">Bengaluru, Karnataka, India</div>
 </div>
 
@@ -141,19 +169,19 @@ footer{
 <div class="card">
 
 <p>
-As a Principal Engineer at Oracle, I work on developing a central Observability and Monitoring platform for customer cloud infrastructure and applications.
+I design and lead central Observability and Monitoring platforms at Oracle, helping customers gain deep visibility into their cloud infrastructure and applications.
 </p>
 
 <p>
-With over 20+ years of experience in cloud-native architecture, DevOps, and OCI, I design and implement scalable, reliable, and secure solutions for monitoring, logging, tracing, alerting, and notifications.
+With over 20 years of experience in cloud-native architecture, DevOps, and OCI, I build scalable, reliable, and secure solutions for monitoring, logging, tracing, alerting, and notifications across large distributed systems.
 </p>
 
 <p>
-I am actively working on Artificial Intelligence to build predictive analytics, anomaly detection systems and Generative AI features for enterprise platforms.
+I am currently focused on applying Artificial Intelligence to observability data—building predictive analytics, anomaly detection systems, and Generative AI features that turn raw signals into actionable insights.
 </p>
 
 <p>
-My work includes building microservices and platforms using Python, Golang, Kubernetes, Docker, OpenSearch, Prometheus, Cortex, Alertmanager and the EFK stack to enable customers to track and optimize infrastructure performance.
+My work includes building microservices and platforms using Python, Golang, Kubernetes, Docker, OpenSearch, Prometheus, Cortex, Alertmanager, and the EFK stack to enable customers to track, troubleshoot, and optimize infrastructure and application performance.
 </p>
 
 </div>
@@ -166,6 +194,8 @@ My work includes building microservices and platforms using Python, Golang, Kube
 <div class="skills">
 
 <div class="skill">Cloud-Native Architecture</div>
+<div class="skill">Observability Platforms</div>
+<div class="skill">Site Reliability Engineering</div>
 <div class="skill">API Development</div>
 <div class="skill">OCI</div>
 <div class="skill">Golang</div>
@@ -187,7 +217,7 @@ My work includes building microservices and platforms using Python, Golang, Kube
 
 <div class="card contact">
 
-<a href="www.linkedin.com/in/sandeepgupta83" target="_blank">LinkedIn</a>
+<a href="https://www.linkedin.com/in/sandeepgupta83" target="_blank">LinkedIn</a>
 
 <a href="https://github.com/kadursandy" target="_blank">GitHub</a>
 
